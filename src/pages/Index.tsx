@@ -7,60 +7,78 @@ import { Badge } from '@/components/ui/badge';
 const cottages = [
   {
     id: 1,
-    name: 'Сосновый',
-    capacity: '2-4 человека',
-    price: '3500',
-    features: ['Камин', 'Кухня', 'Веранда'],
-    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/349ebe05-982d-4afa-b7eb-0b8b5f5d8e6c.jpg'
+    name: 'Эконом',
+    capacity: '2-3 человека',
+    price: '2500',
+    features: ['Кухня', 'Душ', 'Wi-Fi'],
+    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/05962742-7dc0-4385-990b-046e953fae9d.jpg'
   },
   {
     id: 2,
-    name: 'Лесной',
-    capacity: '4-6 человек',
-    price: '5000',
-    features: ['Сауна', 'Барбекю', 'Терраса'],
-    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/990d595c-1587-4306-8896-3302a6cc82ea.jpg'
+    name: 'Стандарт',
+    capacity: '2-4 человека',
+    price: '3500',
+    features: ['Камин', 'Кухня', 'Веранда', 'Душ'],
+    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/062e286e-7619-4d5f-aa3d-f472d7b31fa5.jpg'
   },
   {
     id: 3,
-    name: 'Уютный',
-    capacity: '2 человека',
-    price: '2800',
-    features: ['Вид на лес', 'Кухня'],
-    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/349ebe05-982d-4afa-b7eb-0b8b5f5d8e6c.jpg'
+    name: 'Комфорт',
+    capacity: '4-6 человек',
+    price: '5000',
+    features: ['Сауна', 'Барбекю', 'Терраса', 'Камин'],
+    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/05962742-7dc0-4385-990b-046e953fae9d.jpg'
   },
   {
     id: 4,
     name: 'Семейный',
     capacity: '6-8 человек',
     price: '7000',
-    features: ['Сауна', 'Камин', 'Барбекю', 'Терраса'],
-    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/990d595c-1587-4306-8896-3302a6cc82ea.jpg'
+    features: ['Сауна', 'Камин', 'Барбекю', 'Терраса', '2 спальни'],
+    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/062e286e-7619-4d5f-aa3d-f472d7b31fa5.jpg'
   },
   {
     id: 5,
     name: 'Романтик',
     capacity: '2 человека',
     price: '4200',
-    features: ['Джакузи', 'Камин', 'Вид на озеро'],
-    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/349ebe05-982d-4afa-b7eb-0b8b5f5d8e6c.jpg'
+    features: ['Джакузи', 'Камин', 'Вид на озеро', 'Веранда'],
+    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/05962742-7dc0-4385-990b-046e953fae9d.jpg'
   },
   {
     id: 6,
-    name: 'Охотничий',
+    name: 'Люкс',
     capacity: '4-5 человек',
-    price: '4500',
-    features: ['Камин', 'Барбекю', 'Веранда'],
-    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/990d595c-1587-4306-8896-3302a6cc82ea.jpg'
+    price: '6500',
+    features: ['Сауна', 'Джакузи', 'Камин', 'Барбекю', 'Панорамные окна'],
+    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/062e286e-7619-4d5f-aa3d-f472d7b31fa5.jpg'
   },
   {
     id: 7,
     name: 'Премиум',
     capacity: '8-10 человек',
     price: '9500',
-    features: ['Сауна', 'Джакузи', 'Камин', 'Кухня', 'Барбекю', 'Терраса'],
-    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/990d595c-1587-4306-8896-3302a6cc82ea.jpg'
+    features: ['Сауна', 'Джакузи', 'Камин', 'Кухня', 'Барбекю', 'Терраса', '3 спальни'],
+    image: 'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/062e286e-7619-4d5f-aa3d-f472d7b31fa5.jpg'
   }
+];
+
+const amenities = [
+  { icon: 'Waves', title: 'Пляж', description: 'Собственный песчаный пляж на берегу озера' },
+  { icon: 'Flame', title: 'Костровые зоны', description: 'Оборудованные места для костра и шашлыка' },
+  { icon: 'Bike', title: 'Прокат', description: 'Велосипеды, лодки, катамараны' },
+  { icon: 'Utensils', title: 'Кафе', description: 'Летнее кафе с домашней кухней' },
+  { icon: 'ParkingSquare', title: 'Парковка', description: 'Охраняемая парковка для гостей' },
+  { icon: 'Wifi', title: 'Wi-Fi', description: 'Бесплатный интернет на всей территории' }
+];
+
+const gallery = [
+  'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/a7a7704d-fc21-4bcc-8284-9cebdb5431dd.jpg',
+  'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/05962742-7dc0-4385-990b-046e953fae9d.jpg',
+  'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/062e286e-7619-4d5f-aa3d-f472d7b31fa5.jpg',
+  'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/a7a7704d-fc21-4bcc-8284-9cebdb5431dd.jpg',
+  'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/05962742-7dc0-4385-990b-046e953fae9d.jpg',
+  'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/062e286e-7619-4d5f-aa3d-f472d7b31fa5.jpg'
 ];
 
 export default function Index() {
@@ -74,7 +92,7 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-background">
-      <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border">
+      <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
@@ -138,7 +156,7 @@ export default function Index() {
             </div>
             <div className="animate-scale-in">
               <img
-                src="https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/2696752a-4b96-42ec-8a79-e33b2caaa80e.jpg"
+                src="https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/a7a7704d-fc21-4bcc-8284-9cebdb5431dd.jpg"
                 alt="Сосновый лес"
                 className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />
@@ -152,7 +170,7 @@ export default function Index() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-primary mb-4">Наши коттеджи</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Выберите уютный коттедж по вашему вкусу — от романтичного для двоих до просторного семейного
+              От уютных коттеджей для двоих до просторных семейных домов — для каждого найдется идеальный вариант
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -200,22 +218,15 @@ export default function Index() {
               50 гектаров соснового леса с развитой инфраструктурой для комфортного отдыха
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: 'Waves', title: 'Пляж', desc: 'Оборудованный пляж на берегу озера' },
-              { icon: 'Flame', title: 'Костровые зоны', desc: 'Места для барбекю и костра' },
-              { icon: 'Trees', title: 'Прогулочные тропы', desc: '5 км экотроп по лесу' },
-              { icon: 'Bike', title: 'Прокат', desc: 'Велосипеды, лодки, снаряжение' }
-            ].map((item, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {amenities.map((amenity) => (
+              <Card key={amenity.title} className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className="flex justify-center mb-4">
-                    <div className="p-4 bg-accent/10 rounded-full">
-                      <Icon name={item.icon as any} size={32} className="text-accent" />
-                    </div>
+                  <div className="mx-auto mb-4 w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center">
+                    <Icon name={amenity.icon} size={32} className="text-accent" />
                   </div>
-                  <CardTitle className="text-xl">{item.title}</CardTitle>
-                  <CardDescription>{item.desc}</CardDescription>
+                  <CardTitle className="text-xl">{amenity.title}</CardTitle>
+                  <CardDescription>{amenity.description}</CardDescription>
                 </CardHeader>
               </Card>
             ))}
@@ -226,42 +237,40 @@ export default function Index() {
       <section id="цены" className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary mb-4">Цены и условия</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Прозрачные цены без скрытых платежей
+            <h2 className="text-4xl font-bold text-primary mb-4">Цены на проживание</h2>
+            <p className="text-lg text-muted-foreground">
+              Стоимость указана за сутки проживания
             </p>
           </div>
           <div className="max-w-4xl mx-auto">
             <Card>
               <CardHeader>
-                <CardTitle>Стоимость проживания</CardTitle>
+                <CardTitle className="text-2xl">Прайс-лист</CardTitle>
+                <CardDescription>Сезон 2024-2025</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="font-semibold mb-3 text-lg">Будни (пн-чт)</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li>• Эконом коттеджи: от 2800 ₽</li>
-                      <li>• Стандарт коттеджи: от 3500 ₽</li>
-                      <li>• Премиум коттеджи: от 7000 ₽</li>
-                    </ul>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="grid grid-cols-3 font-semibold text-lg border-b pb-3">
+                    <div>Коттедж</div>
+                    <div className="text-center">Будни</div>
+                    <div className="text-right">Выходные</div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-3 text-lg">Выходные (пт-вс)</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li>• Эконом коттеджи: от 3500 ₽</li>
-                      <li>• Стандарт коттеджи: от 4500 ₽</li>
-                      <li>• Премиум коттеджи: от 9500 ₽</li>
-                    </ul>
-                  </div>
+                  {cottages.map((cottage) => (
+                    <div key={cottage.id} className="grid grid-cols-3 py-3 border-b items-center hover:bg-secondary/10 transition-colors">
+                      <div>
+                        <div className="font-medium">{cottage.name}</div>
+                        <div className="text-sm text-muted-foreground">{cottage.capacity}</div>
+                      </div>
+                      <div className="text-center text-primary font-semibold">{cottage.price} ₽</div>
+                      <div className="text-right text-primary font-semibold">{Math.round(parseInt(cottage.price) * 1.2)} ₽</div>
+                    </div>
+                  ))}
                 </div>
-                <div className="pt-6 border-t">
-                  <h3 className="font-semibold mb-3 text-lg">Дополнительно</h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li>• Прокат велосипедов: 300 ₽/день</li>
-                    <li>• Прокат лодки: 500 ₽/час</li>
-                    <li>• Баня/сауна: 1500 ₽/2 часа</li>
-                  </ul>
+                <div className="mt-6 p-4 bg-secondary/20 rounded-lg">
+                  <p className="text-sm text-muted-foreground">
+                    <Icon name="Info" size={16} className="inline mr-2" />
+                    При бронировании от 7 дней — скидка 15%. Минимальный срок проживания — 2 суток.
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -272,23 +281,18 @@ export default function Index() {
       <section id="галерея" className="py-16 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary mb-4">Галерея</h2>
-            <p className="text-lg text-muted-foreground">Фотографии нашей базы отдыха</p>
+            <h2 className="text-4xl font-bold text-primary mb-4">Фотогалерея</h2>
+            <p className="text-lg text-muted-foreground">
+              Посмотрите, как выглядит наша база отдыха
+            </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-4">
-            {[
-              'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/349ebe05-982d-4afa-b7eb-0b8b5f5d8e6c.jpg',
-              'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/2696752a-4b96-42ec-8a79-e33b2caaa80e.jpg',
-              'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/990d595c-1587-4306-8896-3302a6cc82ea.jpg',
-              'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/349ebe05-982d-4afa-b7eb-0b8b5f5d8e6c.jpg',
-              'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/990d595c-1587-4306-8896-3302a6cc82ea.jpg',
-              'https://cdn.poehali.dev/projects/a6dfec63-bef6-4f24-b69a-0be23d3929ff/files/2696752a-4b96-42ec-8a79-e33b2caaa80e.jpg'
-            ].map((img, index) => (
-              <div key={index} className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {gallery.map((image, index) => (
+              <div key={index} className="relative overflow-hidden rounded-xl shadow-lg group h-64">
                 <img
-                  src={img}
-                  alt={`Галерея ${index + 1}`}
-                  className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+                  src={image}
+                  alt={`Фото ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
             ))}
@@ -299,85 +303,71 @@ export default function Index() {
       <section id="контакты" className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary mb-4">Контакты и как добраться</h2>
-            <p className="text-lg text-muted-foreground">Мы находимся всего в 80 км от города</p>
+            <h2 className="text-4xl font-bold text-primary mb-4">Контакты</h2>
+            <p className="text-lg text-muted-foreground">
+              Свяжитесь с нами для бронирования
+            </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Phone" size={24} className="text-primary" />
-                  Свяжитесь с нами
-                </CardTitle>
+                <CardTitle className="text-2xl">Как добраться</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <Icon name="Phone" size={20} className="text-accent mt-1" />
+                  <Icon name="MapPin" size={24} className="text-accent mt-1" />
                   <div>
-                    <div className="font-semibold">Телефон</div>
-                    <div className="text-muted-foreground">+7 (XXX) XXX-XX-XX</div>
+                    <div className="font-medium">Адрес</div>
+                    <div className="text-muted-foreground">Московская область, Рузский район, п. Сосновый Бор</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Icon name="Mail" size={20} className="text-accent mt-1" />
+                  <Icon name="Car" size={24} className="text-accent mt-1" />
                   <div>
-                    <div className="font-semibold">Email</div>
-                    <div className="text-muted-foreground">info@sosnovybor.ru</div>
+                    <div className="font-medium">На автомобиле</div>
+                    <div className="text-muted-foreground">95 км от МКАД по Минскому шоссе, поворот на Тучково</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Icon name="MapPin" size={20} className="text-accent mt-1" />
+                  <Icon name="Train" size={24} className="text-accent mt-1" />
                   <div>
-                    <div className="font-semibold">Адрес</div>
-                    <div className="text-muted-foreground">Сосновый бор, участок 12</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Clock" size={20} className="text-accent mt-1" />
-                  <div>
-                    <div className="font-semibold">Время работы</div>
-                    <div className="text-muted-foreground">Круглосуточно</div>
+                    <div className="font-medium">На электричке</div>
+                    <div className="text-muted-foreground">С Белорусского вокзала до ст. Тучково, далее на такси 10 км</div>
                   </div>
                 </div>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Car" size={24} className="text-primary" />
-                  Как добраться
-                </CardTitle>
+                <CardTitle className="text-2xl">Связь</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div>
-                  <div className="font-semibold mb-2 flex items-center gap-2">
-                    <Icon name="Car" size={18} className="text-accent" />
-                    На автомобиле
+                <div className="flex items-start gap-3">
+                  <Icon name="Phone" size={24} className="text-accent mt-1" />
+                  <div>
+                    <div className="font-medium">Телефон</div>
+                    <div className="text-muted-foreground">+7 (495) 123-45-67</div>
+                    <div className="text-muted-foreground">+7 (916) 987-65-43</div>
                   </div>
-                  <p className="text-muted-foreground text-sm">
-                    По трассе М-5 до поворота на п. Сосновый. Далее 12 км по асфальтированной дороге. 
-                    Время в пути: 1 час 20 минут.
-                  </p>
                 </div>
-                <div>
-                  <div className="font-semibold mb-2 flex items-center gap-2">
-                    <Icon name="Bus" size={18} className="text-accent" />
-                    На общественном транспорте
+                <div className="flex items-start gap-3">
+                  <Icon name="Mail" size={24} className="text-accent mt-1" />
+                  <div>
+                    <div className="font-medium">Email</div>
+                    <div className="text-muted-foreground">info@forrest-baza.ru</div>
                   </div>
-                  <p className="text-muted-foreground text-sm">
-                    Автобус №125 от автовокзала до остановки "Сосновый бор". 
-                    Отправление каждые 2 часа.
-                  </p>
                 </div>
-                <div>
-                  <div className="font-semibold mb-2 flex items-center gap-2">
-                    <Icon name="Users" size={18} className="text-accent" />
-                    Трансфер
+                <div className="flex items-start gap-3">
+                  <Icon name="Clock" size={24} className="text-accent mt-1" />
+                  <div>
+                    <div className="font-medium">Режим работы</div>
+                    <div className="text-muted-foreground">Ежедневно с 9:00 до 21:00</div>
                   </div>
-                  <p className="text-muted-foreground text-sm">
-                    Организуем встречу и трансфер от города. Стоимость: 1500 ₽ (до 4 человек).
-                  </p>
                 </div>
+                <Button className="w-full bg-primary hover:bg-primary/90 mt-4" size="lg">
+                  <Icon name="MessageCircle" size={20} className="mr-2" />
+                  Написать в WhatsApp
+                </Button>
               </CardContent>
             </Card>
           </div>
@@ -385,17 +375,14 @@ export default function Index() {
       </section>
 
       <footer className="bg-primary text-primary-foreground py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-2">
-              <Icon name="TreePine" size={24} />
-              <span className="font-bold text-xl">Forrest</span>
-            </div>
-            <div className="text-center md:text-right">
-              <p className="text-sm opacity-90">База отдыха в сосновом лесу</p>
-              <p className="text-xs opacity-75 mt-1">© 2024 Все права защищены</p>
-            </div>
+        <div className="container mx-auto px-4 text-center">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Icon name="TreePine" size={24} />
+            <span className="font-bold text-xl">Forrest</span>
           </div>
+          <p className="text-sm opacity-90">
+            База отдыха в сосновом лесу © 2024. Все права защищены.
+          </p>
         </div>
       </footer>
     </div>
