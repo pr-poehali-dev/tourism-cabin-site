@@ -79,7 +79,7 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Icon name="TreePine" size={28} className="text-accent" />
-              <h1 className="text-2xl font-bold text-primary">Сосновый Бор</h1>
+              <h1 className="text-2xl font-bold text-primary">Forrest</h1>
             </div>
             <div className="hidden md:flex gap-6">
               {['Главная', 'Коттеджи', 'Территория', 'Цены', 'Галерея', 'Контакты'].map((item) => (
@@ -389,7 +389,7 @@ export default function Index() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
               <Icon name="TreePine" size={24} />
-              <span className="font-bold text-xl">Сосновый Бор</span>
+              <span className="font-bold text-xl">Forrest</span>
             </div>
             <div className="text-center md:text-right">
               <p className="text-sm opacity-90">База отдыха в сосновом лесу</p>
